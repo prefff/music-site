@@ -1,0 +1,163 @@
+body {
+    background-color: #131313;
+    margin-top: -21.767px;
+    padding: 0px;
+    border: 0px;
+    font-family: "Programme", Arial, sans-serif;
+    color: #dadada;
+}
+.img {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: 0;
+}
+.img250px {
+    display:flex;
+}
+.music_panel_area {
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 23px;
+    z-index: 1;
+}
+.music_panel {
+    margin:auto;
+    display: flex;
+    width:1260px;
+    background-color: #1E1E1E;
+    height: 120px;
+    border-radius: 15px;
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.5);
+}
+.panel {
+    margin:auto;
+    display: flex;
+    background-color: #1E1E1E;
+    height: 250px;
+    width: 1030px;
+}
+.text_panel {
+    margin:auto;
+    color: #f0f0f0;
+    position: relative;
+    margin-left: auto;
+    margin-right: 5em;
+}
+.lyric_panel {
+    position: relative;
+    margin:auto;
+    height: 500px;
+    width: 455px;
+}
+.lyric {
+    color: #dadada;
+    padding: 20px;
+    background-color: #1E1E1E;
+    font: 100 1.125rem / 1.5 "Programme", Arial, sans-serif;
+}
+.actors {
+    position: relative;
+    display: flex;
+    background-color: #1E1E1E;
+    height: 210px;
+    width: 455px;
+}
+.stroke {
+    width: 910px;
+    display: flex;
+    margin:auto;
+}
+.actors_img {
+    right: 9%;
+    position: relative;
+    justify-self: right;
+    top: 20%;
+    height: 126px;
+    width: 126px;
+    border-radius: 50%;
+}
+.actors_name {
+    display: flex;
+    position: relative;
+    margin:auto;
+    left:3em;
+    height: fit-content;
+}
+.actorsimg {
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+}
+h1 {
+    background-color: black;
+    padding: 4px 8px;
+}
+.music_info_panel {
+    display: flex;
+    margin-left: auto;
+    margin-right: 2em;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+.img_music_panel {
+    width: 74px;
+    height: 74px;
+    border-radius: 15px;
+}
+.imgmusicpanel {
+    display: flex;
+    margin:auto;
+    margin-right:1em;
+}
+.text_music_panel {
+    margin-top: auto;
+}
+.text_panel_music {
+    font: 100 1.125rem / 1.5 "Programme", Arial, sans-serif;
+}
+.svg_icons {
+    position: relative;
+    display: flex;
+}
+.svg_panel {
+    width: 80px; 
+    height: 80px;
+}
+.svg_music_panel {
+    width: 40px; 
+    height: 40px;
+}
+.svg_icons_panel {
+    position: relative;
+    pointer-events: all;
+}
+.text_panel_button {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    fill: #dadada;
+    width: 100px;
+    height: 70px;
+    border-radius: 15px;
+    margin-right: 10px;
+    transition: all .5s ease;
+}
+.text_panel_button:hover {
+    fill:#ffffff
+}
+.svg_icons_panel_svg {
+    width: 45px;
+    height: 45px;
+    background-color: rgb(0, 0, 0, 0);
+    border: none;
+    fill: #dadada;
+    transition: all .5s ease;
+}
+.svg_icons_panel_svg:hover {
+    fill: #ffffff;
+}
