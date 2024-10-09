@@ -1,10 +1,17 @@
 body {
     background-color: #131313;
-    margin-top: -21.767px;
-    padding: 0px;
     border: 0px;
+    padding: 0;
+    margin: 0;
     font-family: "Programme", Arial, sans-serif;
     color: #dadada;
+}
+
+.body_settings {
+	height: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 .img {
     position: relative;
@@ -27,6 +34,7 @@ body {
     z-index: 1;
 }
 .music_panel {
+    pointer-events: all;
     margin:auto;
     display: flex;
     width:1260px;
@@ -47,6 +55,7 @@ body {
     color: #f0f0f0;
     position: relative;
     margin-left: auto;
+    margin-top: 4em;
     margin-right: 5em;
 }
 .lyric_panel {
@@ -96,7 +105,7 @@ body {
 }
 h1 {
     background-color: black;
-    padding: 4px 8px;
+    padding: 6px 10px;
 }
 .music_info_panel {
     display: flex;
@@ -140,14 +149,17 @@ h1 {
 .text_panel_button {
     background-color: rgb(0, 0, 0);
     border: none;
-    fill: #dadada;
     width: 100px;
     height: 70px;
     border-radius: 15px;
     margin-right: 10px;
-    transition: all .5s ease;
 }
-.text_panel_button:hover {
+.svg_text_panel_button {
+    transition: all .5s ease;
+    fill: #dadada;
+    stroke: #ffffff;
+}
+.svg_text_panel_button:hover {
     fill:#ffffff
 }
 .svg_icons_panel_svg {
@@ -156,8 +168,11 @@ h1 {
     background-color: rgb(0, 0, 0, 0);
     border: none;
     fill: #dadada;
+    stroke: #ffffff;
     transition: all .5s ease;
 }
 .svg_icons_panel_svg:hover {
     fill: #ffffff;
+	stroke-opacity:0.8;
+	stroke-width: 20;
 }
