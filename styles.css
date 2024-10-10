@@ -37,12 +37,38 @@ body {
     pointer-events: all;
     margin:auto;
     display: flex;
-    width:1260px;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    width:1160px;
     background-color: #1E1E1E;
     height: 120px;
     border-radius: 15px;
-    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.7);
 }
+
+#volume {
+    margin-left: 50px;
+    transform: scale(1.2);
+}
+#play {
+    transform: scale(1.5); /* Увеличиваем размер кнопки воспроизведения */
+}
+
+.svg_icons_panel {
+    display: flex; /* Используем flexbox для расположения кнопок в ряд */
+    justify-content: flex-end; /* Выравнивание кнопок влево */
+    padding-right: 90px; /* При необходимости, добавьте отступ слева */
+    gap: 35px; /* Расстояние между кнопками */
+    margin-left: -4em; /* Сдвиг влево */
+    /* Другие стили, если нужно */
+}
+
+.svg_icons_panel_svg {
+    transform: translateX(70px);
+}
+
+
 .panel {
     margin:auto;
     display: flex;
@@ -157,6 +183,7 @@ h1 {
 .svg_text_panel_button {
     transition: all .5s ease;
     fill: #dadada;
+    stroke: #ffffff;
 }
 .svg_text_panel_button:hover {
     fill:#ffffff
@@ -168,7 +195,7 @@ h1 {
     border: none;
     fill: #dadada;
     stroke: #ffffff;
-    margin-right: 0.5em;
+    stroke-opacity:0;
     transition: all .5s ease;
 }
 .svg_icons_panel_svg:hover {
