@@ -157,7 +157,6 @@ h1 {
 .svg_text_panel_button {
     transition: all .5s ease;
     fill: #dadada;
-    stroke: #ffffff;
 }
 .svg_text_panel_button:hover {
     fill:#ffffff
