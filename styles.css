@@ -41,7 +41,7 @@ body {
     background-color: #1E1E1E;
     height: 120px;
     border-radius: 15px;
-    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.8);
 }
 .panel {
     margin:auto;
@@ -168,6 +168,7 @@ h1 {
     border: none;
     fill: #dadada;
     stroke: #ffffff;
+    margin-right: 0.5em;
     transition: all .5s ease;
 }
 .svg_icons_panel_svg:hover {
