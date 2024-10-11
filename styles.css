@@ -50,39 +50,20 @@ body {
 #volume {
     margin-left: 50px;
     transform: scale(1.2);
-    transition: transform 0.2s ease-in-out;
-}
-
-#volume:hover {
-    transform: scale(1.4); /* Увеличение масштаба при наведении */
 }
 
 #play {
     transform: scale(2);
-    transition: transform 0.2s ease-in-out;
-}
-
-#play:hover {
-    transform: scale(2.2); /* Увеличение масштаба при наведении */
 }
 
 #next_track {
     transform: scale(1.5);
-    transition: transform 0.2s ease-in-out;
-}
-
-#next_track:hover {
-    transform: scale(1.7); /* Увеличение масштаба при наведении */
 }
 
 #prev_track {
     transform: scale(1.5);
-    transition: transform 0.2s ease-in-out;
 }
 
-#prev_track:hover {
-    transform: scale(1.7); /* Увеличение масштаба при наведении */
-}
 .svg_icons_panel {
     display: flex;
     justify-content: flex-end;
@@ -260,7 +241,7 @@ h1 {
     stroke: #ffffff;
     stroke-opacity: 0;
     display: inline-block;
-    transition: transform 0.3s;
+    transition: all .5s ease;
 
 }
 
