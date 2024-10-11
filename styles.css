@@ -216,7 +216,7 @@ h1 {
     height: 70px;
     border-radius: 15px;
     margin-right: 10px;
-    transition: transform 0.2s;
+    transition: transform 0.3s;
 }
 
 .text_panel_button:hover {
@@ -225,7 +225,7 @@ h1 {
 
 
 .svg_text_panel_button {
-    transition: all .5s ease;
+    transition: all .2s ease;
     fill: #dadada;
     stroke: #ffffff;
 }
@@ -241,7 +241,7 @@ h1 {
     stroke: #ffffff;
     stroke-opacity: 0;
     display: inline-block;
-    transition: all .5s ease;
+    transition: all .2s ease;
 
 }
 
