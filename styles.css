@@ -52,9 +52,14 @@ body {
     transform: scale(1.2);
 }
 #play {
+    transform: scale(2);
+}
+#next_track {
     transform: scale(1.5);
 }
-
+#prev_track {
+    transform: scale(1.5);
+}
 .svg_icons_panel {
     display: flex;
     justify-content: flex-end;
@@ -93,8 +98,8 @@ body {
 
 .play_icon {
     cursor: pointer; /* Если требуется сделать курсор "в руку" */
-    width: 120px; /* Увеличиваем ширину иконки */
-    height: 120px; /* Увеличиваем высоту иконки */
+    width: 120%;
+    height: 120%;
 }
 
 .play_button svg {
