@@ -51,15 +51,19 @@ body {
     margin-left: 50px;
     transform: scale(1.2);
 }
+
 #play {
     transform: scale(2);
 }
+
 #next_track {
     transform: scale(1.5);
 }
+
 #prev_track {
     transform: scale(1.5);
 }
+
 .svg_icons_panel {
     display: flex;
     justify-content: flex-end;
@@ -98,8 +102,8 @@ body {
 
 .play_icon {
     cursor: pointer; /* Если требуется сделать курсор "в руку" */
-    width: 120px; /* Увеличиваем ширину иконки */
-    height: 120px; /* Увеличиваем высоту иконки */
+    width: 120%;
+    height: 120%;
 }
 
 .play_button svg {
@@ -212,7 +216,14 @@ h1 {
     height: 70px;
     border-radius: 15px;
     margin-right: 10px;
+    transition: transform 0.2s;
 }
+
+.text_panel_button:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+}
+
+
 .svg_text_panel_button {
     transition: all .5s ease;
     fill: #dadada;
@@ -224,15 +235,19 @@ h1 {
 .svg_icons_panel_svg {
     width: 45px;
     height: 45px;
-    background-color: rgb(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     border: none;
     fill: #dadada;
     stroke: #ffffff;
-    stroke-opacity:0;
+    stroke-opacity: 0;
+    display: inline-block;
     transition: all .5s ease;
+
 }
+
 .svg_icons_panel_svg:hover {
     fill: #ffffff;
-	stroke-opacity:0.8;
-	stroke-width: 20;
+    stroke-opacity: 0.8;
+    stroke-width: 20;
+
 }
