@@ -50,15 +50,38 @@ body {
 #volume {
     margin-left: 50px;
     transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
 }
+
+#volume:hover {
+    transform: scale(1.4); /* Увеличение масштаба при наведении */
+}
+
 #play {
     transform: scale(2);
+    transition: transform 0.2s ease-in-out;
 }
+
+#play:hover {
+    transform: scale(2.2); /* Увеличение масштаба при наведении */
+}
+
 #next_track {
     transform: scale(1.5);
+    transition: transform 0.2s ease-in-out;
 }
+
+#next_track:hover {
+    transform: scale(1.7); /* Увеличение масштаба при наведении */
+}
+
 #prev_track {
     transform: scale(1.5);
+    transition: transform 0.2s ease-in-out;
+}
+
+#prev_track:hover {
+    transform: scale(1.7); /* Увеличение масштаба при наведении */
 }
 .svg_icons_panel {
     display: flex;
@@ -212,7 +235,14 @@ h1 {
     height: 70px;
     border-radius: 15px;
     margin-right: 10px;
+    transition: transform 0.2s;
 }
+
+.text_panel_button:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+}
+
+
 .svg_text_panel_button {
     transition: all .5s ease;
     fill: #dadada;
@@ -224,15 +254,19 @@ h1 {
 .svg_icons_panel_svg {
     width: 45px;
     height: 45px;
-    background-color: rgb(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     border: none;
     fill: #dadada;
     stroke: #ffffff;
-    stroke-opacity:0;
-    transition: all .5s ease;
+    stroke-opacity: 0;
+    display: inline-block;
+    transition: transform 0.3s;
+
 }
+
 .svg_icons_panel_svg:hover {
     fill: #ffffff;
-	stroke-opacity:0.8;
-	stroke-width: 20;
+    stroke-opacity: 0.8;
+    stroke-width: 20;
+
 }
