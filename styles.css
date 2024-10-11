@@ -52,16 +52,21 @@ body {
     transform: scale(1.2);
 }
 #play {
-    transform: scale(1.5); /* Увеличиваем размер кнопки воспроизведения */
+    transform: scale(2);
 }
-
+#next_track {
+    transform: scale(1.5);
+}
+#prev_track {
+    transform: scale(1.5);
+}
 .svg_icons_panel {
-    display: flex; /* Используем flexbox для расположения кнопок в ряд */
-    justify-content: flex-end; /* Выравнивание кнопок влево */
-    padding-right: 90px; /* При необходимости, добавьте отступ слева */
-    gap: 35px; /* Расстояние между кнопками */
-    margin-left: -4em; /* Сдвиг влево */
-    /* Другие стили, если нужно */
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 90px;
+    gap: 35px;
+    margin-left: -4em;
+
 }
 
 .svg_icons_panel_svg {
@@ -70,11 +75,39 @@ body {
 
 
 .panel {
-    margin:auto;
+    margin: auto;
     display: flex;
-    background-color: #1E1E1E;
+    background: linear-gradient(to right, #363636, #121212);
     height: 250px;
     width: 1030px;
+    align-items: center;
+}
+
+.play_button {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 50px;
+    transition: background-color 0.3s; 
+}
+
+.play_icon {
+    cursor: pointer; /* Если требуется сделать курсор "в руку" */
+    width: 120px; /* Увеличиваем ширину иконки */
+    height: 120px; /* Увеличиваем высоту иконки */
+}
+
+.play_button svg {
+    transition: transform 0.3s; /* Анимация при наведении */
+}
+
+.play_button:hover svg {
+    transform: scale(1.05); /* Увеличение при наведении */
 }
 .text_panel {
     margin:auto;
