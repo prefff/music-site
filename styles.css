@@ -97,7 +97,7 @@ body {
     border-radius: 50%;
     cursor: pointer;
     margin-left: 50px;
-    transition: background-color 0.5s;
+    transition: background-color 0.3s; 
 }
 
 .play_icon {
@@ -107,11 +107,11 @@ body {
 }
 
 .play_button svg {
-    transition: transform 0.3s ease;/* Анимация при наведении */
+    transition: transform 0.3s; /* Анимация при наведении */
 }
 
-.play_button:hover path {
-    transform: scale(1.01); /* Увеличение при наведении */
+.play_button:hover svg {
+    transform: scale(1.05); /* Увеличение при наведении */
 }
 .text_panel {
     margin:auto;
