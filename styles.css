@@ -32,20 +32,29 @@ body {
     right: 0px;
     bottom: 23px;
     z-index: 1;
+    opacity: 1;
+    transition: opacity 0.5s ease;
 }
+
+.music_panel_area.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
 .music_panel {
     pointer-events: all;
-    margin:auto;
+    margin: auto;
     display: flex;
     position: relative;
     justify-content: flex-end;
     align-items: center;
-    width:1160px;
+    width: 1160px;
     background-color: #1E1E1E;
     height: 120px;
     border-radius: 15px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.7);
 }
+
 
 #volume {
     margin-left: 50px;
@@ -107,7 +116,7 @@ body {
 }
 
 .play_button svg {
-    transition: transform 0.3s; /* Анимация при наведении */
+    transition: transform 0.1s; /* Анимация при наведении */
 }
 
 .play_button:hover svg {
