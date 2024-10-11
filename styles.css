@@ -52,16 +52,16 @@ body {
     transform: scale(1.2);
 }
 #play {
-    transform: scale(1.5); /* Увеличиваем размер кнопки воспроизведения */
+    transform: scale(1.5);
 }
 
 .svg_icons_panel {
-    display: flex; /* Используем flexbox для расположения кнопок в ряд */
-    justify-content: flex-end; /* Выравнивание кнопок влево */
-    padding-right: 90px; /* При необходимости, добавьте отступ слева */
-    gap: 35px; /* Расстояние между кнопками */
-    margin-left: -4em; /* Сдвиг влево */
-    /* Другие стили, если нужно */
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 90px;
+    gap: 35px;
+    margin-left: -4em;
+
 }
 
 .svg_icons_panel_svg {
@@ -72,23 +72,23 @@ body {
 .panel {
     margin: auto;
     display: flex;
-    background: linear-gradient(to right, #363636, #121212); /* Светло-серый к темно-серому */
+    background: linear-gradient(to right, #363636, #121212);
     height: 250px;
     width: 1030px;
-    align-items: center; /* Выравнивание по вертикали */
+    align-items: center;
 }
 
 .play_button {
-    width: 130px; /* Увеличиваем ширину кнопки */
-    height: 130px; /* Увеличиваем высоту кнопки */
+    width: 130px;
+    height: 130px;
     display: flex;
-    align-items: center; /* Вертикальное выравнивание */
-    justify-content: center; /* Горизонтальное выравнивание */
-    background-color: #ffffff; /* Цвет фона кнопки */
-    border-radius: 50%; /* Закругленные углы для круга */
-    cursor: pointer; /* Указатель при наведении */
-    margin-left: 50px; /* Отступ от других элементов */
-    transition: background-color 0.3s; /* Плавный переход цвета */
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 50px;
+    transition: background-color 0.3s; 
 }
 
 .play_icon {
