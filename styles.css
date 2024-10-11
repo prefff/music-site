@@ -72,7 +72,7 @@ body {
 .panel {
     margin: auto;
     display: flex;
-    background-color: #1E1E1E;
+    background: linear-gradient(to right, #363636, #121212); /* Светло-серый к темно-серому */
     height: 250px;
     width: 1030px;
     align-items: center; /* Выравнивание по вертикали */
