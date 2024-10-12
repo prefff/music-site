@@ -2,6 +2,7 @@ let timeoutId;
 let timeoutId1;
 const delay = 3000; // время в миллисекундах
 const delay_button = 100;
+let isActive1= false
 
 const musicPanelArea = document.querySelector('.music_panel_area');
 const soundtrackButton = document.querySelector('.soundtrack_button')
@@ -25,20 +26,21 @@ window.onload = () => {
     timeoutId = setTimeout(hidePanel, delay);
 };
 
-document.querySelectorAll('.svg_text_panel_button').forEach(button => {
-    button.addEventListener('click', function() {
-        document.querySelectorAll('.svg_text_panel_button').forEach(btn => {
-            btn.classList.remove('active');
-        });
-        this.classList.add('active');
-    });
-});
+// доделать надо
+document.addEventListener('DOMContentLoaded', () => {
+    // Получаем все кнопки внутри body_settings
+    const buttons = document.querySelectorAll('.body_settings svg');
 
-document.querySelectorAll('.svg_icons_panel_button').forEach(button => {
-    button.addEventListener('click', function() {
-        document.querySelectorAll('.svg_icons_panel_button').forEach(btn => {
-            btn.classList.remove('active');
+    buttons.forEach(button => {
+        button.addEventListener('click', function () {
+            // Если кнопка уже активна, убираем активный класс
+            if (button.classList.contains('active')) {
+                button.classList.remove('active');
+            }
+            // Если кнопка не активна, добавляем активный класс
+            else {
+                button.classList.add('active');
+            }
         });
-        this.classList.add('active');
     });
 });
