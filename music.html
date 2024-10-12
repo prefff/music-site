@@ -68,50 +68,65 @@
         <!-- основной плеер -->
         <div class="music_panel_area">
             <div class="music_panel">
-                <button class="svg_icons_panel_svg">
-                    <svg version="1.1" id="prev_track" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="100%" height="100%" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
-                        <path class="st0"
-                            d="M269.671,328.098l-120.873-68.719c-7.146-4.063-7.156-14.357-0.018-18.434l120.873-69.033
-                                             c7.072-4.039,15.869,1.068,15.869,9.212v137.752C285.522,327.011,276.743,332.119,269.671,328.098z" />
-                        <path class="st0"
-                            d="M340.716,328.098l-120.873-68.719c-7.146-4.063-7.156-14.357-0.018-18.434l120.873-69.033
-                                             c7.072-4.039,15.869,1.068,15.869,9.212v137.752C356.567,327.011,347.788,332.119,340.716,328.098z" />
-                    </svg>
-                </button>
-                <button class="svg_icons_panel_svg">
-                    <svg version="1.1" id="play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%"
-                        height="100%" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
-                        <path class="st0" d="M174.152,357.323l166.105-94.435c9.82-5.583,9.834-19.731,0.025-25.332l-166.105-94.866
-                    	c-9.718-5.55-21.807,1.468-21.807,12.659V344.65C152.369,355.83,164.434,362.849,174.152,357.323z" />
-                    </svg>
-                </button>
-                <button class="svg_icons_panel_svg">
-                    <svg version="1.1" id="next_track" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="100%" height="100%" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
-                        <path class="st0"
-                            d="M230.329,328.098l120.873-68.719c7.146-4.063,7.156-14.357,0.018-18.434l-120.873-69.033
-                                             c-7.072-4.039-15.869,1.068-15.869,9.212v137.752C214.478,327.011,223.257,332.119,230.329,328.098z" />
-                        <path class="st0"
-                            d="M159.284,328.098l120.873-68.719c7.146-4.063,7.156-14.357,0.018-18.434l-120.873-69.033
-                                             c-7.072-4.039-15.869,1.068-15.869,9.212v137.752C143.433,327.011,152.212,332.119,159.284,328.098z" />
-                    </svg>
-                </button>
-                <button class="svg_icons_panel_svg">
-                    <svg version="1.1" id="volume" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="100%" height="100%" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
-                        <path class="st0"
-                            d="M334.355 313.994H127.807c-19.5 0-35.307-15.808-35.307-35.307v-57.374c0-19.5 15.808-35.307 35.307-35.307H334.354v127.988z" />
-                        <path class="st0"
-                            d="m292.522 119.21-121.564 66.796V250h163.397V128.213c0-11.635-26.617-17.364-41.833-9.003zM292.522 380.79l-121.564-66.796V250h163.397v121.787c0 11.635-26.617 17.364-41.833 9.003zM395.852 250H407.5c-.34-28.624-21.255-55.652-52.244-68.328-.433 2.932-.851 7.629 0 13.196 4.676 30.592 39.753 35.793 40.596 55.132z" />
-                        <path class="st0"
-                            d="M395.852 250H407.5c-.34 28.624-21.255 55.652-52.244 68.328-.433-2.932-.851-7.629 0-13.196 4.676-30.592 39.753-35.793 40.596-55.132z" />
-                        <path class="st0"
-                            d="M395.852 250H407.5c-.34-28.624-21.255-55.652-52.244-68.328-.433 2.932-.851 7.629 0 13.196 4.676 30.592 39.753 35.793 40.596 55.132z" />
-                        <path class="st0"
-                            d="M395.852 250H407.5c-.34 28.624-21.255 55.652-52.244 68.328-.433-2.932-.851-7.629 0-13.196 4.676-30.592 39.753-35.793 40.596-55.132z" />
-                    </svg>
-                </button>
+                <!-- Левые кнопки -->
+                <div class="track_panel_buttons">
+                    <button class="svg_icons_panel_svg">
+                        <svg version="1.1" id="prev_track" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="100%" height="100%" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;"
+                            xml:space="preserve">
+                            <path class="st0"
+                                d="M269.671,328.098l-120.873-68.719c-7.146-4.063-7.156-14.357-0.018-18.434l120.873-69.033
+                                                                 c7.072-4.039,15.869,1.068,15.869,9.212v137.752C285.522,327.011,276.743,332.119,269.671,328.098z" />
+                            <path class="st0"
+                                d="M340.716,328.098l-120.873-68.719c-7.146-4.063-7.156-14.357-0.018-18.434l120.873-69.033
+                                                                 c7.072-4.039,15.869,1.068,15.869,9.212v137.752C356.567,327.011,347.788,332.119,340.716,328.098z" />
+                        </svg>
+                    </button>
+                    <button class="svg_icons_panel_svg">
+                        <svg version="1.1" id="play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="100%" height="100%" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;"
+                            xml:space="preserve">
+                            <path class="st0"
+                                d="M174.152,357.323l166.105-94.435c9.82-5.583,9.834-19.731,0.025-25.332l-166.105-94.866
+                                            c-9.718-5.55-21.807,1.468-21.807,12.659V344.65C152.369,355.83,164.434,362.849,174.152,357.323z" />
+                        </svg>
+                    </button>
+                    <button class="svg_icons_panel_svg">
+                        <svg version="1.1" id="next_track" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="100%" height="100%" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;"
+                            xml:space="preserve">
+                            <path class="st0"
+                                d="M230.329,328.098l120.873-68.719c7.146-4.063,7.156-14.357,0.018-18.434l-120.873-69.033
+                                                                 c-7.072-4.039-15.869,1.068-15.869,9.212v137.752C214.478,327.011,223.257,332.119,230.329,328.098z" />
+                            <path class="st0"
+                                d="M159.284,328.098l120.873-68.719c7.146-4.063,7.156-14.357,0.018-18.434l-120.873-69.033
+                                                                 c-7.072-4.039-15.869,1.068-15.869,9.212v137.752C143.433,327.011,152.212,332.119,159.284,328.098z" />
+                        </svg>
+                    </button>
+                    <div class="volume_panel">
+                        <button class="svg_icons_panel_svg">
+                            <svg version="1.1" id="volume" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="100%" height="100%" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;"
+                                xml:space="preserve">
+                                <path class="st0"
+                                    d="M334.355 313.994H127.807c-19.5 0-35.307-15.808-35.307-35.307v-57.374c0-19.5 15.808-35.307 35.307-35.307H334.354v127.988z" />
+                                <path class="st0"
+                                    d="m292.522 119.21-121.564 66.796V250h163.397V128.213c0-11.635-26.617-17.364-41.833-9.003zM292.522 380.79l-121.564-66.796V250h163.397v121.787c0 11.635-26.617 17.364-41.833 9.003zM395.852 250H407.5c-.34-28.624-21.255-55.652-52.244-68.328-.433 2.932-.851 7.629 0 13.196 4.676 30.592 39.753 35.793 40.596 55.132z" />
+                                <path class="st0"
+                                    d="M395.852 250H407.5c-.34 28.624-21.255 55.652-52.244 68.328-.433-2.932-.851-7.629 0-13.196 4.676-30.592 39.753-35.793 40.596-55.132z" />
+                                <path class="st0"
+                                    d="M395.852 250H407.5c-.34-28.624-21.255-55.652-52.244-68.328-.433 2.932-.851 7.629 0 13.196 4.676 30.592 39.753 35.793 40.596 55.132z" />
+                                <path class="st0"
+                                    d="M395.852 250H407.5c-.34 28.624-21.255 55.652-52.244 68.328-.433-2.932-.851-7.629 0-13.196 4.676-30.592 39.753-35.793 40.596-55.132z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- аудиодорожка -->
+                <div class="soundtrack">
+                    <div class="soundtrack_progressbar"></div>
+                    <div class="soundtrack_button"></div>
+                </div>
                 <div class="music_info_panel">
                     <div class="imgmusicpanel">
                         <img class="img_music_panel" src="img_music/dd.jpg" alt="dd" />
@@ -122,10 +137,10 @@
                                 psychosis & torontokyo - dd
                             </p>
                         </div>
+                        <!-- Правые кнопки -->
                         <div class="svg_icons_panel">
-                            <!-- Правые кнопки -->
-                            <button class="svg_icons_panel_svg">
-                                <svg version="1.1" id="like_panel" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90%"
+                            <button class="svg_icons_panel_svg" type="button_color"  id="like_button">
+                                <svg class="svg_icons_panel_button" version="1.1" id="like_panel" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90%"
                                     height="90%" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
                                     <path d="M250,200.6v177.2L104.9,241.4c-4.1-5.1-19.3-25.3-15.8-52.4c5.4-42.2,50.1-59.9,51.9-60.6c26.5-10,65.1-9.8,89.7,14.1
                                                                 C254.3,165.3,250.7,195.8,250,200.6z" />
@@ -146,7 +161,7 @@
                                 </svg>
                             </button>
                             <button class="svg_icons_panel_svg">
-                                <svg version="1.1" id="add_playlist_panel" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                <svg version="1.1" class="svg_icons_panel_button" id="add_playlist_panel" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="90%" height="90%" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
                                     <path d="M338,191.4H143.2c-13.1,0-23.7-10.6-23.7-23.7l0,0c0-13.1,10.6-23.7,23.7-23.7H338c13.1,0,23.7,10.6,23.7,23.7l0,0
                                                                                             C361.7,180.8,351.1,191.4,338,191.4z" />
@@ -161,7 +176,7 @@
                                 </svg>
                             </button>
                             <button class="svg_icons_panel_svg">
-                                <svg version="1.1" id="next_up_panel" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                <svg version="1.1" class="svg_icons_panel_button" id="next_up_panel" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="90%" height="90%" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
                                     <path d="M341.8,191.4H143.6c-13.3,0-24.1-10.6-24.1-23.7l0,0c0-13.1,10.8-23.7,24.1-23.7h198.2c13.3,0,24.1,10.6,24.1,23.7l0,0
                                                                                             C365.9,180.8,355.1,191.4,341.8,191.4z" />
@@ -273,6 +288,10 @@
                     <br>
                     Я вижу в зеркале тварь и просто скалю ему зубы
                 </div>
+                <footer>
+                    <div class="footer">
+                    </div>
+                </footer>
             </div>
             <!-- исполнители -->
             <div class="actorss">
