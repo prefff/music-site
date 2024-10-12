@@ -54,10 +54,17 @@ body {
     border-radius: 15px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.7);
 }
+.track_panel_buttons {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    transform: translateX(70px);
+    gap: 0.5em;
+    margin-left: -1em;
+}
 
-
-#volume {
-    margin-left: 50px;
+.volume_panel {
+    margin-left: 1em;
     transform: scale(1.2);
 }
 
@@ -80,10 +87,6 @@ body {
     gap: 35px;
     margin-left: -4em;
 
-}
-
-.svg_icons_panel_svg {
-    transform: translateX(70px);
 }
 
 
@@ -213,6 +216,8 @@ h1 {
     height: 40px;
 }
 .svg_icons_panel {
+    cursor: pointer;
+    transform: translateX(70px);
     position: relative;
     pointer-events: all;
 }
@@ -237,6 +242,7 @@ h1 {
     stroke: #ffffff;
 }
 .svg_text_panel_button:hover {
+    transform: scale(1.2);
     fill:#ffffff
 }
 .svg_icons_panel_svg {
@@ -253,10 +259,15 @@ h1 {
 }
 
 .svg_icons_panel_svg:hover {
+    transform: scale(1.1);
     fill: #ffffff;
     stroke-opacity: 0.8;
-    stroke-width: 20;
-
+    stroke-width: 10;
+    
+}
+.svg_icons_panel_svg.active {
+    fill: aqua;
+    
 }
 .footer {
     width: 100%;
