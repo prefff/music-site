@@ -33,7 +33,7 @@ body {
     bottom: 23px;
     z-index: 1;
     opacity: 1;
-    transition: opacity 0.1s ease;
+    transition: opacity 0.3s ease;
 }
 
 .music_panel_area.hidden {
@@ -48,23 +48,26 @@ body {
     position: relative;
     justify-content: flex-end;
     align-items: center;
-    width: 1160px;
+    width: 1055px;
     background-color: #1E1E1E;
-    height: 120px;
+    height: 109px;
     border-radius: 15px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.7);
+    transition: .5s .2s cubic-bezier(.77,0,.18,1);;
+}
+.music_panel:hover {
+    transform: scale(1.1);
 }
 .track_panel_buttons {
-    cursor: pointer;
     display: flex;
     flex-direction: row;
     transform: translateX(70px);
     gap: 0.5em;
-    margin-left: -1em;
+    margin-left: -2.5em;
 }
 
 .volume_panel {
-    margin-left: 1em;
+    margin-left: 1.5em;
     transform: scale(1.2);
 }
 
@@ -216,7 +219,6 @@ h1 {
     height: 40px;
 }
 .svg_icons_panel {
-    cursor: pointer;
     transform: translateX(70px);
     position: relative;
     pointer-events: all;
@@ -237,6 +239,7 @@ h1 {
 
 
 .svg_text_panel_button {
+    cursor: pointer;
     transition: all .2s ease;
     fill: #dadada;
     stroke: #ffffff;
@@ -245,9 +248,14 @@ h1 {
     transform: scale(1.2);
     fill:#ffffff
 }
+.svg_text_panel_button.active {
+    fill: red;
+    stroke: red;
+}
 
 /* сука сделай что то с этим */
 .svg_icons_panel_svg {
+    cursor: pointer;
     width: 45px;
     height: 45px;
     background-color: rgba(0, 0, 0, 0);
@@ -258,6 +266,10 @@ h1 {
     display: inline-block;
     transition: all .2s ease;
 
+}
+.svg_icons_panel_button.active {
+    fill: red;
+    stroke: red;
 }
 
 .svg_icons_panel_svg:hover {
@@ -275,4 +287,37 @@ h1 {
 .footer {
     width: 100%;
     height:10em;
+}
+.soundtrack {
+    pointer-events: all;
+    transform: translateX(70px);
+    padding-left: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    text-align: center;
+    margin-left: 2em;
+    width: 40%;
+    height:70%
+}
+.soundtrack_button {
+    left:-8px;
+    position:relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
+    width: 14px;
+    background-color: #757575;
+    border-radius: 3px;
+    box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.6);
+    transition: all .2s ease;
+}
+.soundtrack:hover .soundtrack_button {
+    background-color: #dadada;
+}
+.soundtrack_progressbar {
+    min-width:1px;
+    height: 100%;
+    background: linear-gradient(to right, #1E1E1E, #5F5F5F);
 }
