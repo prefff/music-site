@@ -290,6 +290,24 @@ h1 {
     opacity: 1;
 }
 
+#next_up.active {
+    opacity: 0.9;
+    fill: red;
+    stroke:red;
+}
+#next_up.active:hover {
+    opacity: 1;
+}
+
+#add_playlist.active {
+    opacity: 0.9;
+    fill: red;
+    stroke:red;
+}
+#add_playlist.active:hover {
+    opacity: 1;
+}
+
 .svg_icons_panel_svg {
     cursor: pointer;
     width: 45px;
