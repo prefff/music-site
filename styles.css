@@ -59,8 +59,37 @@ body {
     height: 109px;
     border-radius: 15px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.7);
-    transition: .5s .1s cubic-bezier(.77,0,.18,1);;
+    transition: .5s .1s cubic-bezier(.77,0,.18,1);
 }
+.music_panel_hidden {
+    z-index: 1;
+    justify-content: flex-end;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 23px;
+    pointer-events: all;
+    align-items: center;
+    background-color: #1E1E1E;
+    opacity:0;
+    width: 50%;
+    height: 50px;
+    border-radius: 8px;
+    transition:opacity .5s .2s ease, .5s .1s cubic-bezier(.77,0,.18,1);
+}
+
+.music_panel_hidden.open {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+    background-color: #b8b8b8;
+    height: 8px;
+    width: 15%;
+    opacity: 1;
+    pointer-events: none;
+}
+
 .track_panel_buttons {
     display: flex;
     flex-direction: row;

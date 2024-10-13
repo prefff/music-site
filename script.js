@@ -6,12 +6,16 @@ let isActive1= false
 
 const musicPanelArea = document.querySelector('.music_panel_area');
 const soundtrackButton = document.querySelector('.soundtrack_button')
+const musicPanelHidden = document.querySelector('.music_panel_hidden')
+
 const hidePanel = () => {
     musicPanelArea.classList.add('hidden');
+    musicPanelHidden.classList.add('open');
 };
 
 const showPanel = () => {
     musicPanelArea.classList.remove('hidden');
+    musicPanelHidden.classList.remove('open');
     clearTimeout(timeoutId);
     timeoutId = setTimeout(hidePanel, delay);
 };
