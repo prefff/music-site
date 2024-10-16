@@ -72,61 +72,75 @@
                 <!-- Левые кнопки -->
                 <div class="track_panel_buttons">
                     <button class="svg_icons_panel_svg">
-                        <svg version="1.1" id="prev_track" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            width="100%" height="100%" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;"
-                            xml:space="preserve">
-                            <path class="st0"
-                                d="M269.671,328.098l-120.873-68.719c-7.146-4.063-7.156-14.357-0.018-18.434l120.873-69.033
-                                                                 c7.072-4.039,15.869,1.068,15.869,9.212v137.752C285.522,327.011,276.743,332.119,269.671,328.098z" />
-                            <path class="st0"
-                                d="M340.716,328.098l-120.873-68.719c-7.146-4.063-7.156-14.357-0.018-18.434l120.873-69.033
-                                                                 c7.072-4.039,15.869,1.068,15.869,9.212v137.752C356.567,327.011,347.788,332.119,340.716,328.098z" />
-                        </svg>
+                        <svg class="svg_icons_panel_button" version="1.1" id="prev_track" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="100%" height="100%" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;"
+                        xml:space="preserve">
+                        <path class="st0"
+                        d="M269.671,328.098l-120.873-68.719c-7.146-4.063-7.156-14.357-0.018-18.434l120.873-69.033
+                        c7.072-4.039,15.869,1.068,15.869,9.212v137.752C285.522,327.011,276.743,332.119,269.671,328.098z" />
+                        <path class="st0"
+                        d="M340.716,328.098l-120.873-68.719c-7.146-4.063-7.156-14.357-0.018-18.434l120.873-69.033
+                        c7.072-4.039,15.869,1.068,15.869,9.212v137.752C356.567,327.011,347.788,332.119,340.716,328.098z" />
+                    </svg>
+                </button>
+                    <audio id="audio" src="music/dd.mp3" preload="auto"></audio>
+                <button class="svg_icons_panel_svg">
+                    <svg class="svg_icons_panel_button"  version="1.1" id="play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="100%" height="100%" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;"
+                    xml:space="preserve">
+                    <path class="st0"
+                    d="M174.152,357.323l166.105-94.435c9.82-5.583,9.834-19.731,0.025-25.332l-166.105-94.866
+                    c-9.718-5.55-21.807,1.468-21.807,12.659V344.65C152.369,355.83,164.434,362.849,174.152,357.323z" />
+                </svg>
                     </button>
                     <button class="svg_icons_panel_svg">
-                        <svg version="1.1" id="play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            width="100%" height="100%" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;"
-                            xml:space="preserve">
-                            <path class="st0"
-                                d="M174.152,357.323l166.105-94.435c9.82-5.583,9.834-19.731,0.025-25.332l-166.105-94.866
-                                            c-9.718-5.55-21.807,1.468-21.807,12.659V344.65C152.369,355.83,164.434,362.849,174.152,357.323z" />
-                        </svg>
-                    </button>
-                    <button class="svg_icons_panel_svg">
-                        <svg version="1.1" id="next_track" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            width="100%" height="100%" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;"
-                            xml:space="preserve">
-                            <path class="st0"
-                                d="M230.329,328.098l120.873-68.719c7.146-4.063,7.156-14.357,0.018-18.434l-120.873-69.033
-                                                                 c-7.072-4.039-15.869,1.068-15.869,9.212v137.752C214.478,327.011,223.257,332.119,230.329,328.098z" />
-                            <path class="st0"
-                                d="M159.284,328.098l120.873-68.719c7.146-4.063,7.156-14.357,0.018-18.434l-120.873-69.033
-                                                                 c-7.072-4.039-15.869,1.068-15.869,9.212v137.752C143.433,327.011,152.212,332.119,159.284,328.098z" />
-                        </svg>
-                    </button>
-                    <div class="volume_panel">
+                        <svg class="svg_icons_panel_button" version="1.1" id="next_track" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="100%" height="100%" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;"
+                        xml:space="preserve">
+                        <path class="st0"
+                        d="M230.329,328.098l120.873-68.719c7.146-4.063,7.156-14.357,0.018-18.434l-120.873-69.033
+                        c-7.072-4.039-15.869,1.068-15.869,9.212v137.752C214.478,327.011,223.257,332.119,230.329,328.098z" />
+                        <path class="st0"
+                        d="M159.284,328.098l120.873-68.719c7.146-4.063,7.156-14.357,0.018-18.434l-120.873-69.033
+                        c-7.072-4.039-15.869,1.068-15.869,9.212v137.752C143.433,327.011,152.212,332.119,159.284,328.098z" />
+                    </svg>
+                </button>
+                    <div class="volume_panel" style="position: relative;">
+                        <div id="volumeRectangle" class="volume-rectangle">
+                            <div id = "white-stripe" class="white-stripe"></div>
+                            <div class="volume-level" id="volumeLevel" style="user-select: none;">0%</div>
+                            <div class="slider" id="slider"></div>
+                            <div class="lvl-strip" id="lvl-strip"></div>
+                        </div>
                         <button class="svg_icons_panel_svg">
-                            <svg version="1.1" id="volume" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="100%" height="100%" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;"
-                                xml:space="preserve">
+                            <svg class="svg_icons_panel_button" version="1.1" id="volume" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="100%" height="100%" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;"
+                                 xml:space="preserve">
+                        <path class="st0"
+                              d="M334.355 313.994H127.807c-19.5 0-35.307-15.808-35.307-35.307v-57.374c0-19.5 15.808-35.307 35.307-35.307H334.354v127.988z" />
                                 <path class="st0"
-                                    d="M334.355 313.994H127.807c-19.5 0-35.307-15.808-35.307-35.307v-57.374c0-19.5 15.808-35.307 35.307-35.307H334.354v127.988z" />
+                                      d="m292.522 119.21-121.564 66.796V250h163.397V128.213c0-11.635-26.617-17.364-41.833-9.003zM292.522 380.79l-121.564-66.796V250h163.397v121.787c0 11.635-26.617 17.364-41.833 9.003zM395.852 250H407.5c-.34-28.624-21.255-55.652-52.244-68.328-.433 2.932-.851 7.629 0 13.196 4.676 30.592 39.753 35.793 40.596 55.132z" />
                                 <path class="st0"
-                                    d="m292.522 119.21-121.564 66.796V250h163.397V128.213c0-11.635-26.617-17.364-41.833-9.003zM292.522 380.79l-121.564-66.796V250h163.397v121.787c0 11.635-26.617 17.364-41.833 9.003zM395.852 250H407.5c-.34-28.624-21.255-55.652-52.244-68.328-.433 2.932-.851 7.629 0 13.196 4.676 30.592 39.753 35.793 40.596 55.132z" />
+                                      d="M395.852 250H407.5c-.34 28.624-21.255 55.652-52.244 68.328-.433-2.932-.851-7.629 0-13.196 4.676-30.592 39.753-35.793 40.596-55.132z" />
                                 <path class="st0"
-                                    d="M395.852 250H407.5c-.34 28.624-21.255 55.652-52.244 68.328-.433-2.932-.851-7.629 0-13.196 4.676-30.592 39.753-35.793 40.596-55.132z" />
+                                      d="M395.852 250H407.5c-.34-28.624-21.255-55.652-52.244-68.328-.433 2.932-.851 7.629 0 13.196 4.676 30.592 39.753 35.793 40.596 55.132z" />
                                 <path class="st0"
-                                    d="M395.852 250H407.5c-.34-28.624-21.255-55.652-52.244-68.328-.433 2.932-.851 7.629 0 13.196 4.676 30.592 39.753 35.793 40.596 55.132z" />
-                                <path class="st0"
-                                    d="M395.852 250H407.5c-.34 28.624-21.255 55.652-52.244 68.328-.433-2.932-.851-7.629 0-13.196 4.676-30.592 39.753-35.793 40.596-55.132z" />
+                                      d="M395.852 250H407.5c-.34 28.624-21.255 55.652-52.244 68.328-.433-2.932-.851-7.629 0-13.196 4.676-30.592 39.753-35.793 40.596-55.132z" />
                             </svg>
                         </button>
                     </div>
                 </div>
-                <!-- аудиодорожка -->
                 <div class="soundtrack">
                     <div class="soundtrack_progressbar"></div>
-                    <div class="soundtrack_button"></div>
+                    <div class="soundtrack_button" id="play-button">
+                        <div class="sountrack_button_time">
+                        </div>
+                        <div class="time_display" id="time-display">
+                            <div class="time_display_current">
+                                <strong>00:00 / 3:15</strong>
+                            </div>
+                        </div>
+                        </div>
                 </div>
                 <div class="music_info_panel">
                     <div class="imgmusicpanel">
